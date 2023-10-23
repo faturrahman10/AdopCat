@@ -40,10 +40,10 @@ const Home = () => {
         <div className="flex flex-col justify-center w-1/2 h-screen pt-16 pl-[5%] relative">
           <div className="mb-7">
             <p className="text-4xl font-semibold text-yellow-500 leading-snug">AYO! <br /> BERSAMA SAHABAT KECIL <br /> KITA MULAI PERJALANAN BARU </p>
-            <p className="font-semibold text-slate-500">Satu adopsi adalah kebahagiaan bagi mereka</p>
+            <p className="font-semibold text-slate-500">Rumah baru akan memberikan kenyamanan bagi mereka</p>
           </div>
           <a href="/cat/list">
-            <button className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-lg text-white font-semibold">Mulai Adopsi</button>
+            <button className="bg-yellow-500 hover:bg-yellow-600 px-6 py-2 rounded-xl text-white font-semibold tracking-widest">Mulai Adopsi</button>
           </a>
         </div>
       </div>
@@ -52,7 +52,7 @@ const Home = () => {
         <div className="relative">
           <div className="w-2/3 absolute z-20 top-32">
             <h2 className="font-semibold text-2xl mb-3 text-yellow-500">About Us</h2>
-            <p className="leading-9 tracking-tighter text-lg font-normal text-slate-500">
+            <p className="leading-9 tracking-widest text-lg font-normal text-slate-500">
             <span className="font-semibold text-slate-800">adop<span className="text-yellow-500">cat</span></span> merupakan tempat menebar kasih sayang, terhusus untuk kucing-kucing terlantar diluar sana. Kami ingin mengajak Anda untuk mempertimbangkan adopsi sebagai cara sarana untuk memperluas kebaikan. Adopsi adalah tindakan luar biasa yang dapat memberi harapan dan cinta kepada kucing yang telah mengalami kesulitan. <span className="font-semibold text-slate-800">Mari kita bersama-sama menciptakan cerita bahagia bersama teman baru</span>.
             </p>
           </div>
