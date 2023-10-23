@@ -19,7 +19,7 @@ const Home = () => {
     try {
       const response = await openai.createCompletion({
         model: 'text-davinci-003',
-        prompt: `Kamu adalah Dokter Hewan yang menjawab pertanyaan: ${input}`,
+        prompt: `kamu adalah dokter hewan yang menjawab pertanyaan ${input}`,
         temperature: 0.5,
         max_tokens: 100,
       });
@@ -39,8 +39,8 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center w-1/2 h-screen pt-16 pl-[5%] relative">
           <div className="mb-7">
-            <p className="text-4xl font-semibold text-yellow-500 leading-snug">AYO! <br /> BERSAMA SAHABAH KECIL <br /> KITA MULAI PERJALANAN BARU </p>
-            <p className="font-semibold">Satu adopsi adalah kebahagiaan mereka</p>
+            <p className="text-4xl font-semibold text-yellow-500 leading-snug">AYO! <br /> BERSAMA SAHABAT KECIL <br /> KITA MULAI PERJALANAN BARU </p>
+            <p className="font-semibold text-slate-500">Satu adopsi adalah kebahagiaan bagi mereka</p>
           </div>
           <a href="/cat/list">
             <button className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-lg text-white font-semibold">Mulai Adopsi</button>
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="aboutUs mt-24 mx-[5%]">
+      <div className="aboutUs mt-24 mx-[5%]" id="aboutUs">
         <div className="relative">
           <div className="w-2/3 absolute z-20 top-32">
             <h2 className="font-semibold text-2xl mb-3 text-yellow-500">About Us</h2>
@@ -95,31 +95,29 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-14 mx-[20%] mb-20">
+      <div className="mt-14 mx-[20%] mb-20" id="QnA">
         <h2 className="font-semibold text-2xl text-center mb-5 text-yellow-500">QnA</h2>
         <div>
-          <div className="">
-            <div className="flex justify-between">
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                className="w-[75%] h-12 p-2 mr-5 mb-4 border border-gray-300 rounded focus:outline-none"
-                placeholder="Tulis pertanyaan anda..."
-              />
-              <button
-                onClick={handleSubmit}
-                className="w-[20%] h-12 bg-yellow-500 font-semibold text-white rounded hover:bg-yellow-600 cursor-pointer"
-              >
-                {loading ? "Sending..." : "Send"}
-              </button>
-            </div>
-            <div className="mt-4">
-              <div
-                className="w-full h-36 overflow-auto p-2 border border-gray-300 rounded focus:outline-none"
-              >
-                {response}
-              </div>
+          <div className="flex justify-between">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              className="w-[75%] h-12 p-2 mr-5 mb-4 border border-gray-300 rounded focus:outline-none"
+              placeholder="Pertanyaan anda disini..."
+            />
+            <button
+              onClick={handleSubmit}
+              className="w-[20%] h-12 bg-yellow-500 font-semibold text-white rounded hover:bg-yellow-600 cursor-pointer"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </div>
+          <div className="mt-4">
+            <div
+              className="w-full h-36 overflow-auto p-2 border border-gray-300 rounded focus:outline-none"
+            >
+              {response}
             </div>
           </div>
         </div>
