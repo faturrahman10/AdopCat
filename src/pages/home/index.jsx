@@ -117,7 +117,7 @@ const Home = () => {
             <div
               className="w-full h-36 overflow-auto p-2 border border-gray-300 rounded focus:outline-none"
             >
-              {response}
+              {loading ? "Memuat Jawaban..." : response}
             </div>
           </div>
         </div>
