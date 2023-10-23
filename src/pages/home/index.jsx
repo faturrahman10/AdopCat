@@ -34,8 +34,7 @@ const Home = () => {
       <Navbar />
       <div className="flex justify-between items-center px-[5%] mx-[5%]">
         <div className="pt-16 relative w-1/2 h-screen">
-          <img src="/img/circleHero.png" className="absolute w-[500px] h-auto" alt="" />
-          <img className="absolute -top-20 w-[550px] h-auto" src="/img/catHome1.png" alt="kucing" />
+          <img src="/img/catHomeCoba.png" className="absolute top-0 w-[550px] h-auto" alt="" />
         </div>
         <div className="flex flex-col justify-center w-1/2 h-screen pt-16 pl-[5%] relative">
           <div className="mb-7">
