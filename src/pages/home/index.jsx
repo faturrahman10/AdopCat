@@ -34,7 +34,7 @@ const Home = () => {
       <Navbar />
       <div className="flex justify-between items-center px-[5%] mx-[5%]">
         <div className="pt-16 relative w-1/2 h-screen">
-          <div className="absolute w-[500px] h-[500px] bg-yellow-500 rounded-full"></div>
+          <img src="/img/circleHero.png" className="absolute w-[500px] h-auto" alt="" />
           <img className="absolute -top-20 w-[550px] h-auto" src="/img/catHome1.png" alt="kucing" />
         </div>
         <div className="flex flex-col justify-center w-1/2 h-screen pt-16 pl-[5%] relative">
@@ -48,8 +48,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="aboutUs mt-24 mx-[5%]" id="aboutUs">
-        <div className="relative">
+      <div className="aboutUs mt-24 mx-[5%]">
+        <div className="relative" id="aboutUs">
           <div className="w-2/3 absolute z-20 top-32">
             <h2 className="font-semibold text-2xl mb-3 text-yellow-500">About Us</h2>
             <p className="leading-9 tracking-widest text-lg font-normal text-slate-500">
