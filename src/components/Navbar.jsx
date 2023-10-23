@@ -8,13 +8,16 @@ const Navbar = () => {
         <div>
           <ul className="flex justify-between gap-10">
             <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
-              <a href="">Home</a>
+              <a href="/">Home</a>
+            </li>
+            <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
+              <a href="#aboutUs">About Us</a>
             </li>
             <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
               <a href="">Adopsi</a>
             </li>
             <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
-              <a href="">QnA</a>
+              <a href="#QnA">QnA</a>
             </li>
           </ul>
         </div>
