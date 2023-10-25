@@ -11,13 +11,13 @@ const Navbar = () => {
               <a href="/">Home</a>
             </li>
             <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
-              <a href="#aboutUs">About Us</a>
+              <a href="/#aboutUs">About Us</a>
             </li>
             <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
               <a href="/cat/list">Adopsi</a>
             </li>
             <li className="text-lg font-semibold text-yellow-500 hover:text-yellow-600 cursor-pointer">
-              <a href="#QnA">QnA</a>
+              <a href="/#QnA">QnA</a>
             </li>
           </ul>
         </div>
