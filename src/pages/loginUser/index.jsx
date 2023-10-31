@@ -44,7 +44,7 @@ const Login = () => {
     <div>
       <div className="w-100 h-screen flex justify-center items-center bg-[url('/img/bgLogin.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-slate-600 opacity-30"></div>
-        <div className="w-1/2 bg-opacity-50 backdrop-blur-lg rounded-lg py-10 px-5 flex justify-center items-center gap-4">  
+        <div className="w-1/2 bg-opacity-50 backdrop-blur-md rounded-lg py-10 px-5 flex justify-center items-center gap-4">  
           <div className="w-1/2 flex flex-col mb-5 justify-center items-center">
             <FontAwesomeIcon
               className="text-slate-200 mb-5"
