@@ -30,7 +30,7 @@ const AdminNavbar = () => {
             <li
               className="cursor-pointer text-white text-lg mb-4"
               onClick={() => {
-                navigate("/auth/loginAdmin");
+                
               }}
               >
               Log Out
