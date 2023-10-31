@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCat } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from '../../../components/Sidebar';
 
 const AdminAllData = () => {
@@ -58,9 +60,18 @@ const AdminAllData = () => {
       <Sidebar/>
       <div className="pl-[20%] pr-10">
         <h1 className="text-3xl font-semibold mb-4 mt-5">All Data</h1>
-        <div className="bg-yellow-400 p-3 w-1/5 rounded-lg mb-5">
-          <p className="text-xl text-white mb-5 font-semibold">Jumlah Kucing</p>
-          <p className="text-lg text-white">{kucingData.length} kucing</p>
+        <div className="flex justify-between items-center gap-5 bg-yellow-400 p-3 w-[250px] rounded-lg mb-5">
+          <div>
+            <FontAwesomeIcon 
+              icon={faCat}
+              size="3x"
+              className="text-white"
+            />
+          </div>
+          <div>
+            <p className="text-xl text-white mb-5 font-semibold">Jumlah Kucing</p>
+            <p className="text-lg text-white">{kucingData.length} kucing</p>
+          </div>
         </div>
         <table className="min-w-full">
           <thead>
