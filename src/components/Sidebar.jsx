@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDatabase, faPlus, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const AdminNavbar = () => {
   const navigate = useNavigate();
@@ -12,27 +14,30 @@ const AdminNavbar = () => {
         <div>
           <ul className="pl-5">
             <li
-              className="cursor-pointer text-white text-lg mb-4"
+              className="flex items-center gap-3 cursor-pointer text-white text-lg mb-4"
               onClick={() => {
                 navigate("/admin/data");
               }}
               >
+                <FontAwesomeIcon icon={faDatabase}/>
               All Data
             </li>
             <li
-              className="cursor-pointer text-white text-lg mb-4"
+              className="flex items-center gap-3 cursor-pointer text-white text-lg mb-4"
               onClick={() => {
                 navigate("/admin/post");
               }}
               >
+                <FontAwesomeIcon icon={faPlus}/>
               Add Data
             </li>
             <li
-              className="cursor-pointer text-white text-lg mb-4"
+              className="flex items-center gap-3 cursor-pointer text-white text-lg mb-4"
               onClick={() => {
                 
               }}
               >
+                <FontAwesomeIcon icon={faRightFromBracket}/>
               Log Out
             </li>
           </ul>
