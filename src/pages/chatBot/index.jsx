@@ -43,14 +43,14 @@ const ChatBot = () => {
             />
             <button
               onClick={handleSubmit}
-              className="w-[20%] h-12 bg-yellow-500 font-semibold text-white rounded hover:bg-yellow-600 cursor-pointer"
+              className={`w-[20%] h-12 bg-yellow-500 font-semibold text-white rounded hover:bg-yellow-600 cursor-pointer ${loading ? "animate-pulse" : ""}`}
             >
               {loading ? "Sending..." : "Send"}
             </button>
           </div>
           <div className="mt-4">
             <div
-              className="w-full h-36 overflow-auto p-2 border border-gray-300 rounded focus:outline-none"
+              className={`w-full h-36 overflow-auto p-2 border border-gray-300 rounded focus:outline-none ${loading ? 'animate-pulse' : ""}`}
             >
               {loading ? "Memuat Jawaban..." : response}
             </div>
